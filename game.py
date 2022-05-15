@@ -29,37 +29,6 @@ C_GREEN = (32, 128, 32)
 C_RED = (255, 0, 0)
 C_BLACK = (0, 0, 0)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #финальный спрайт (Делает Ширяев Андрей)
 class FinalSprite(sprite.Sprite):
     def _init_(self, player_image, player_x, player_y, player_speed):
