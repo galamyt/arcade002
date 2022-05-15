@@ -1,4 +1,33 @@
 #подключение модулей, переменные (Делает Чекерес Владислав)
+from random import randint
+from pygame import*
+font.init()
+
+font = font.Font(None, 72)
+win_width = 800
+win_height = 600
+left_bound = win_width / 40
+right_bound = win_width - 8 * left_bound
+shift = 0
+
+x_start = 20
+y_start = 10
+
+img_file_back = 'bg.jpg'
+img_file_hero = 'player.png'
+img_file_enemy = 'sprite.png' 
+img_file_bomb = 'bomb.png'
+img_file_door = 'door.png'
+img_wall = 'wall.png'
+
+FPS = 60
+
+C_WHITE = (255, 255, 255)
+C_DARK = (48, 48, 0)
+C_YELLOW = (255, 255, 87)
+C_GREEN = (32, 128, 32)
+C_RED = (255, 0, 0)
+C_BLACK = (0, 0, 0)
 
 
 
