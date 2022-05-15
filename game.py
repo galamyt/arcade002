@@ -10,8 +10,26 @@
 
 
 
+#ЗАПУСК КОДА!!
+display.set_caption("ARCADA")
+window = display.set_mode([win_width, win_height])
+
+back = transform.scale(image.load(img_file_back).convert(), (win_width, win_height))
 
 
+all_sprites = sprite.Group()
+
+barriers = sprite.Group()
+
+
+enemies = sprite.Group()
+
+
+bombs = sprite.Group()
+
+
+robin = Hero(img_file_hero)
+all_sprites.add(robin)
 
 
 
