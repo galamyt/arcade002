@@ -32,22 +32,14 @@
 
 
 #финальный спрайт (Делает Ширяев Андрей)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class FinalSprite(sprite.Sprite):
+    def _init_(self, player_image, player_x, player_y, player_speed):
+        sprite.Sprite._init_ (self)
+        self.image = transform.scale(image.load(player_image), (100, 100)) 
+        self.speed = player_speed 
+        self.rect = self.image.get_rect() 
+        self.rect.x = player_x 
+        self.rect.y = player_y
 #главный герой свойтва (Делает Кривша Анатолий)
 
 
