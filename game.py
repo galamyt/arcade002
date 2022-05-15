@@ -154,12 +154,12 @@ enemies.add(en)
 
 
 #создаем мины, добавляем их:
-bomb = Enemy(250, 200, 'bomb23.png', 60, 60)
+bomb = Enemy(250, 200, img_file_bomb, 60, 60)
 bombs.add(bomb) #в список всех спрайтов бомбы не добавляем, будем рисовать их отдельной командой
                 #так легко сможем подрывать бомбы, а также делаем их неподвижными, update() не вызывается
 
 #создаем финальный спрайт, добавляем его:
-door = FinalSprite('door.png', win_width + 500, win_height - 150, 0)
+door = FinalSprite(img_file_door, win_width + 500, win_height - 150, 0)
 all_sprites.add(door)
 
 #основной цикл игры, управление (Делает --)
