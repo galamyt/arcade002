@@ -38,6 +38,7 @@ class FinalSprite(sprite.Sprite):
         self.rect = self.image.get_rect() 
         self.rect.x = player_x 
         self.rect.y = player_y
+        
 #главный герой свойтва (Делает Кривша Анатолий)
 
 
@@ -88,42 +89,6 @@ def update(self):
         for p in platforms_touched:
             self.y_speed = 0
             self.rect.top = max(self.rect.top, p.rect.bottom)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #класс стен (Делает Сьомкин Владислав)
 
