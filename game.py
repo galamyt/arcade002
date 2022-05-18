@@ -142,9 +142,7 @@ bombs = sprite.Group()
 robin = Hero(img_file_hero)
 all_sprites.add(robin)
 
-#создание стен
-
-#создаем стены,добавляем их:
+#создаем стены, добавляем их:
 list_blocks=['1100100010001111','00110100000','000011110000111','0011111111111111111111111111','00111111111111111111111111111']
 for i in range(len(list_blocks)):
     for j in range(len(list_blocks[i])):
