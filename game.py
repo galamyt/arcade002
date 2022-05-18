@@ -97,7 +97,14 @@ def update(self):
 
 #класс стен (Делает Сьомкин Владислав)
 
-
+#Класс стен
+class Wall(sprite.Sprite):
+    def __init__(self,filename,x=20,y=0,width=100,height=100):
+        sprite.Sprite.__init__(self)
+        self.image = transform.scale(image.load(filename),(width,height)).convert_alpha()
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
 
 
 
@@ -139,7 +146,14 @@ all_sprites.add(robin)
 
 #создание стен
 
-
+#создаем стены,добавляем их:
+list_blocks=['1100100010001111','00110100000','000011110000111','0011111111111111111111111111','00111111111111111111111111111']
+for i in range(len(list_blocks)):
+    for j in range(len(list_blocks[i])):
+        print(i,j)
+        w = wall(img_wall,(j)*80,(i+1)*130,100,50)
+        barriers.add(w)
+        all_sprites.add(w)
 
 
 
