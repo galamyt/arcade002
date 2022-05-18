@@ -96,8 +96,6 @@ def update(self):
             self.rect.top = max(self.rect.top, p.rect.bottom)
 
 #класс стен (Делает Сьомкин Владислав)
-
-#Класс стен
 class Wall(sprite.Sprite):
     def __init__(self,filename,x=20,y=0,width=100,height=100):
         sprite.Sprite.__init__(self)
