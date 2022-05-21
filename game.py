@@ -45,22 +45,16 @@ class FinalSprite(sprite.Sprite):
         self.rect.y = player_y
         
 #главный герой свойтва (Делает Кривша Анатолий)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Hero(sprite.Sprite):
+	def __init__(self, filename, x_speed = 0, y_speed = 0, x = x_start, width = 60, height = 60):
+		sprite.Sprite.__init__(self)
+		self.image = transform.scale(image.load(filename), (width, height)).convert_alpha()
+		self.rect = self.image.get_rect()
+		self.rect.x = x
+		self.rect.y = y
+		self.x_speed = x_speed
+		self.y_speed = y_speed
+		self.stands_on = False
 
 #главный герой методы (Делает Кривша Анатолий)
 def gravitate(self):
